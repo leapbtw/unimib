@@ -3,7 +3,9 @@ class main {
 	public static void main(String args[]) {
 		Scanner t = new Scanner(System.in);
 		
-		double e = 0;
+		double e = 0; // epsilon
+		
+		// input di epsilon da tastiera
 		while (true) {
 			try {
 				System.out.print("inserisci epsilon: ");
@@ -18,7 +20,7 @@ class main {
 		double n = 0;
 		while (true) {
 			double result = n/(n+1);
-			if (1 - e < result && result <= 1) break;
+			if (1 - e < result && result <= 1) break; // controllo la disequazione
 		}
 		
 		System.out.println("n: " + n);

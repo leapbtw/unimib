@@ -34,7 +34,7 @@ class main{
 		// posizione m		
 		s = s.substring(0, m-1) + (char) (s.charAt(m-1)-32) + s.substring(m); //(m-1) perché gli array partono da zero
 		int x = 1;
-		while (true) { 						// -32 per trasformare in maiuscola
+		while (true) { 						// -32 per trasformare da minuscola in MAIUSCOLA
 			int pos = (m-1 + x*n) % k;		// pos da modificare
 			x++;
 			if (s.charAt(pos) < 97) break;	// se s.charAt(pos) è gia maiuscolo esco dal ciclo
